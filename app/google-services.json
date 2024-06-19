@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532047192080",
+    "project_id": "perfil22222222222222222222222",
+    "storage_bucket": "perfil22222222222222222222222.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532047192080:android:8c6fb2c21bf1be299e6a95",
+        "android_client_info": {
+          "package_name": "cesar.landaverde.cesarperfil222222222222222"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRbjX8FJP391X36oNP3N5AEW12NgCdG80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
