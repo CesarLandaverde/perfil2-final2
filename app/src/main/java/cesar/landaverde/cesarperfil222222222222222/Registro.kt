@@ -22,10 +22,10 @@ class Registro : AppCompatActivity() {
         val txtcontraRegis = findViewById<EditText>(R.id.TxtcontraseñaRegistro)
         val btnRegistrar = findViewById<Button>(R.id.btnRegistar)
 
-        btnRegistrar.setOnClickListener
+
 
 
 
     }
 
-}
+}git 
