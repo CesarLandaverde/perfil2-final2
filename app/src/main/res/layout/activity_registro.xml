@@ -20,14 +20,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtCorreoRegistro"
+        android:id="@+id/txtCorreoLogin"
         android:layout_width="303dp"
         android:layout_height="85dp"
         android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="Correo"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/TxtcontraseñaRegistro"
+        app:layout_constraintBottom_toTopOf="@+id/txtContralogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.316"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,20 +35,20 @@
         app:layout_constraintVertical_bias="0.304" />
 
     <EditText
-        android:id="@+id/TxtcontraseñaRegistro"
+        android:id="@+id/txtContralogin"
         android:layout_width="300dp"
         android:layout_height="89dp"
         android:layout_marginBottom="80dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistar"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.361"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistar"
+        android:id="@+id/btnIniciar"
         android:layout_width="160dp"
         android:layout_height="69dp"
         android:layout_marginBottom="204dp"

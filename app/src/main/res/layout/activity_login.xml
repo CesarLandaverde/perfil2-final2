@@ -11,50 +11,77 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/cambay_bold"
         android:text="Bienvenido a Help Desk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtCorreoRegistro"
-        android:layout_width="303dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/txtCorreoLogin"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/forma"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:hint="Correo"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/TxtcontraseñaRegistro"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtContralogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.316"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/TxtcontraseñaRegistro"
-        android:layout_width="300dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="80dp"
+
+        android:id="@+id/txtContralogin"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/forma"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
+
         android:hint="Contraseña"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistar"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarmne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistar"
-        android:layout_width="160dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="204dp"
+        android:id="@+id/btnIniciar"
+        android:layout_width="211dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/black"
         android:text="Iniciar"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarmne"
+        android:layout_width="211dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/black"
+        android:text="Crear Cuenta"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pnglogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
