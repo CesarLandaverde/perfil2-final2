@@ -9,6 +9,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import modelo.ClaseConexion
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +31,19 @@ class Login : AppCompatActivity() {
         val btnRegistro = findViewById<Button>(R.id.btnRegistrarmne)
 
         btnRegistro.setOnClickListener {
+          val pantallaRegistro = Intent(this, Registro::class.java)
+            startActivity(pantallaRegistro)
+        }
 
+        btnIniciar.setOnClickListener{
+            val pantallaprinci = Intent(this,RegistrarDatos::class.java)
+            GlobalScope.launch(Dispatchers.IO) {
+                val objConexion = ClaseConexion().cadenaConexion()
+
+                val checkUsuario = objConexion?.prepareStatement("Select * From Usuarios where nombre_user = ? and contra_user = ? ")!!
+
+
+            }
         }
     }
 
