@@ -1,9 +1,11 @@
 package cesar.landaverde.cesarperfil222222222222222
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -57,8 +59,39 @@ class RegistrarDatos : AppCompatActivity() {
         }
 
         btnVerRegistro.setOnClickListener {
-           val pantallaRegistrar = Intent(this,)
+           val pantallaRegistrar = Intent(this,Login::class.java)
+            startActivity(pantallaRegistrar)
         }
+
+        val cerrarsesion = findViewById<ImageView>(R.id.imgCerrar)
+
+        cerrarsesion.setOnClickListener{
+
+            val context = this
+
+            val builder = AlertDialog.Builder(context)
+
+            builder.setTitle("Log Out")
+            builder.setMessage("¿Desea Cerrar Sesión?")
+
+            builder.setPositiveButton("Si"){dialog, which ->
+
+                val pLogin = Intent(this,Login::class.java)
+                startActivity(pLogin)
+            }
+
+            builder.setNegativeButton("No"){ dialog, which ->
+
+                dialog.dismiss()
+            }
+
+            val dialog = builder.create()
+
+            dialog.show()
+
+        }
+
+
 
 
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
+import cesar.landaverde.cesarperfil222222222222222.InformacionDetalle
 import cesar.landaverde.cesarperfil222222222222222.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -132,7 +133,8 @@ class Adaptador(var Datos:List<Tickets>):RecyclerView.Adapter<ViewHolder>() {
 
         holder.itemView.setOnClickListener{
             val context = holder.itemView.context
-            val pantallaInfo = Intent(context,)
+            val pantallaInfo = Intent(context,InformacionDetalle::class.java)
+
         }
     }
     }
